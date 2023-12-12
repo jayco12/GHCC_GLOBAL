@@ -1,8 +1,5 @@
-import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
-import { HashLink } from 'react-router-hash-link';
 import TrackVisibility from 'react-on-screen';
 export const PSO = () => {
  

@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import { HashLink } from 'react-router-hash-link';
 import TrackVisibility from 'react-on-screen';
@@ -48,7 +47,10 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <Container>
+      
+      <Container >
+      <div id="background-video">
+    <div > 
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
@@ -63,6 +65,7 @@ export const Banner = () => {
                       <br/>
                   <span className="tagline">GREAT HOUSE CHRISTIAN CENTRE</span>
                   
+    
                   <h1> <span className="txt-rotate" dataPeriod="500" data-rotate='[ "Helping men find fulfilment in life through Christ", "  Reaching, Raising, equipping men in their walk with God and work for God" ]'><span className="wrap">{text}</span></span></h1>
                  <div className="about">
                  <HashLink to='#about'>
@@ -90,6 +93,8 @@ export const Banner = () => {
             </TrackVisibility>
           </Col>
         </Row>
+        </div>
+        </div>
       </Container>
     </section>
   )
