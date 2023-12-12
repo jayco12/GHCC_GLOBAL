@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+  }
+  
+  body {
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #121212 ;
+    color: #fff ;
+    font-family: 'Centra', sans-serif !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+  }
+  
+  p, a, li, button, ul {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  button {
+    border: 0;
+    background-color: transparent;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+  }
+  
+  @media (min-width:1700px) {
+      main .container {
+          max-width: 100%;
+          padding: 0 150px;
+      }
+  }
+  
+  p.success {
+      color: green;
+  }
+  
+  p.danger {
+      color: red;
+  }
+  /* BANNER CSS */
+.pso {
+    margin-top: 0;
+    padding: 100px 0 100px 0;
+    /* background:linear-gradient(0.21deg, rgba(51, 101, 56, 0.5) -20.91%, rgba(67, 7, 5, 0.5)80.58%), */
+    background-image: url('../../assets/img/pso/ps1.png');
+    clip-path: circle(10, 20, 50,0);
+    background-blend-mode:soft-light;
+    background-position: top center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: #fff ;
+  }
+  
+  .pso .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+  
+    background: linear-gradient(90.21deg, rgba(19, 66, 28, 0.5) -5.91%, rgba(121, 31, 28, 0.5)111.58%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+  
+  .pso h1 {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+  color:white;
+  text-align: center;
+  width:1200px
+  }
+  @media (min-width: 0px )and (max-width: 1100px ) {
+    .pso h1 {
+      font-size: 45px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      line-height: 1;
+      margin-bottom: 20px;
+      display: block;
+      color:white;
+      text-align: center;
+      width:100%
+      }
+  }
+  
+  
+  .pso img {
+    animation: updown 3s linear infinite;
+  }
+
+/* About Css */
+
+
+.aboutpso{
+    margin-top: 0;
+    padding: 10px 0 0px 0;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  background-color: #fff;
+  color:rgb(1, 3, 1);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+.titlepso{
+    color:rgb(25, 104, 25);
+    font-weight: 700px;
+    display: block;
+    padding-left: 50px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-stack {
+    width: 300px;
+    height: 650px;
+    position: relative;
+    margin: 30px;
+  }
+
+  .image-stack__item--top {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin-top: 100px;
+    
+  }
+
+  .image-stack__item--bottom {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px;
+    background-image: url('../../assets/img/pso/pd.jpg');
+    height: 500px;
+    width:650px;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+
+  .ps{
+    padding: 0px 0px 0px 0px;
+    height: 400px;
+    width:250px;
+    border-radius: 30px;
+  
+}
+@media (min-width: 0px )and (max-width: 1100px ) {
+  .image-stack__item--top {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin-top: 230px;
+    margin-right: 800px;
+    
+  }
+  
+  .ps{
+    padding: 0px 0px 0px 0px;
+    height: 300px;
+    width:200px;
+    border-radius: 30px;
+  
+}
+.image-stack__item--bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 30px;
+  background-image: url('../../assets/img/pso/pd.jpg');
+  height: 600px;
+  width:400px;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+}
