@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import { HashLink } from 'react-router-hash-link';
 import TrackVisibility from 'react-on-screen';
+import { useNavigate } from "react-router-dom";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -44,7 +45,7 @@ export const Banner = () => {
     }
   }
 
-
+  const navigate = useNavigate()
   return (
     <section className="banner" id="home">
       
@@ -68,9 +69,8 @@ export const Banner = () => {
     
                   <h1> <span className="txt-rotate" dataPeriod="500" data-rotate='[ "Helping men find fulfilment in life through Christ", "  Reaching, Raising, equipping men in their walk with God and work for God" ]'><span className="wrap">{text}</span></span></h1>
                  <div className="about">
-                 <HashLink to='#about'>
-                  <button>Who we are</button>
-                  </HashLink>
+               
+                  <button onClick={() =>navigate('/wwa')} >Who we are</button>
                   <HashLink to='#connect'>
                   <button>Latest Sermon</button>
                  </HashLink>

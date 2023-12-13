@@ -53,7 +53,7 @@ export const About = () => {
                                         The next most important thing after salvation is knowledge. God desires that you grow in your knowledge of what Christ has done, and what you have as a result. Celebration Church is committed to your progress and joy in the faith, and we have a spiritual curriculum to partner with you towards that purpose – to know Christ and to make Him known.
                                     </h5>
                                     <div className="link">
-                                        <HashLink to='#about'>
+                                        <HashLink to='#connect'>
                                             <button>Listen to sermons</button>
                                         </HashLink>
 
